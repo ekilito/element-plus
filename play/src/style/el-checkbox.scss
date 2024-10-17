@@ -1,0 +1,27 @@
+.el-checkbox {
+    .el-checkbox__input {
+        .el-checkbox__inner {
+            border: none!important;
+            background-color: red!important;
+        }
+    }
+    .el-checkbox__label {
+        color: red;
+    }
+}
+.el-checkbox.is-checked {
+    .el-checkbox__input {
+        .el-checkbox__inner {
+            border: none!important;
+            background-color: red!important;
+            &:after {
+                // 控制勾选符号
+                left: 5px;
+                top: 2px;
+            }
+        }
+    }
+    .el-checkbox__label {
+        color: red;
+    }
+}

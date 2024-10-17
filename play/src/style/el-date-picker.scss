@@ -1,0 +1,17 @@
+.el-date-picker {
+    background-color: #092f4e!important;
+    border: 1px solid #1787b0!important;
+
+    // 日历容器
+    .el-picker-panel__body-wrapper {
+        .el-picker-panel__body {
+            // 头部输入框
+            .el-date-picker__time-header {
+                border-bottom: 1px solid #053b64!important;
+
+                // 第二个时间输入框
+            }
+        }
+    }
+
+}
