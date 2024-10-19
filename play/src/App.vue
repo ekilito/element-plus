@@ -2,12 +2,13 @@
   <!-- If you want to apply a custom namespace, uncomment the following and apply the css configuration in `vite.config.ts`. -->
   <!-- <el-config-provider namespace="ep"> -->
   <div class="play-container">
-    
+    <el-button></el-button>
   </div>
   <!-- </el-config-provider> -->
 </template>
 
 <script setup lang="ts">
+import elButton from './components/button.vue';
 
 // code here
 
