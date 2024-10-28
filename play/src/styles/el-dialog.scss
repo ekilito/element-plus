@@ -1,0 +1,452 @@
+/* 全局设置 element ui dialog水平垂直居中 */
+.el-dialog {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px !important;
+}
+
+// ElDialog弹窗样式
+.el-dialog {
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0 !important;
+    border-radius: 0 0 12px 12px;
+    box-sizing: border-box;
+
+    .el-dialog__header {
+        height: 40px;
+        box-shadow: none;
+        border-radius: 0 0 0 12px;
+
+        .dialog-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            height: 40px;
+            position: relative;
+        }
+
+        .el-dialog__title {
+            display: flex;
+            align-items: center;
+            font-family: "Microsoft YaHei";
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 9px;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                margin-left: 5px;
+                margin-right: 5px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .button {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+
+
+    .el-dialog__body {
+        padding: 20px;
+    }
+
+    // 设备控制表单
+    .control-form-box {
+        margin-bottom: 20px;
+        padding: 20px 20px 30px 20px;
+        overflow: hidden;
+        box-shadow: inset 0px 4px 10px 0px #01101d;
+        box-sizing: border-box;
+
+        // 每一项
+        .item {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            // 文本
+            .label {
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                width: 90px;
+                text-align: end;
+            }
+
+            // 输入框
+            .el-input {
+                flex: 1;
+            }
+
+            // 滑块
+            .slider-demo-block {
+                flex: 1;
+                position: relative;
+                margin: 0 0 0 5px;
+
+                // 滑块上方文本
+                .value-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 16px;
+                    position: absolute;
+                    top: -20px;
+                    width: 100%;
+                }
+            }
+
+            // 步进器
+            .el-input-number {
+                width: 110px;
+                margin-left: 15px;
+            }
+
+            // tab选择
+            .item-tab {
+                flex: 1;
+                display: flex;
+                align-items: center;
+
+                .tab {
+                    width: 84px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 16px;
+                    cursor: pointer;
+
+                    &.active-tab {
+                        border-radius: 2px;
+                    }
+                }
+            }
+
+            // 开关样式
+            .switch-box {
+
+                .switch-open {
+                    .el-switch__core .el-switch__action {
+                        background-color: #19ed9b;
+                    }
+                }
+
+                .switch-close {
+                    .el-switch__core .el-switch__action {
+                        background-color: #ff4949;
+                    }
+                }
+
+                .el-switch__core {
+                    background-image: linear-gradient(0deg,
+                            #042a4e 0%,
+                            #010d18 100%);
+                    border: 2px solid #04294c;
+                }
+
+                .el-switch {
+                    transform: scale(1.2);
+                }
+
+                .el-switch__inner {
+                    border-radius: 18px;
+                    border: 1px solid #000305;
+                }
+
+                .is-text {
+                    color: #99d2f9;
+                }
+
+            }
+
+            // 末尾单位
+            .unit {
+                width: 50px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+// 弹窗取消和确认按钮
+.form-button-box {
+    display: flex;
+    justify-content: center;
+
+    .cancel-button {
+        width: 98px;
+        height: 36px;
+        border-radius: 2px;
+        background: none;
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .confirm-button {
+        border: none;
+        width: 98px;
+        height: 36px;
+        border-radius: 2px;
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+}
+
+
+body[themeType="blue"] {
+
+    // ElDialog弹窗样式
+    .el-dialog {
+        background: #092a42 !important;
+        border: 1px solid #0c6e9b;
+
+        .el-dialog__header {
+            background: linear-gradient(to right, #08446e, #08446e, #022842);
+
+            .el-dialog__title {
+                color: #c6f9ff;
+
+                &:before {
+                    background-image: url("@/assets/images/themeGeneral/dialog-title-icon.png");
+                }
+            }
+
+            .button {
+                background-image: url("@/assets/images/themeBlue/public/close-button.png");
+            }
+        }
+
+        // 设备控制表单
+        .control-form-box {
+            background-image: linear-gradient(#042239, #042239), linear-gradient(#0c6e9b, #0c6e9b);
+            box-shadow: inset 0px 4px 10px 0px #01101d;
+            border: 1px solid #0a3352;
+
+            // 每一项
+            .item {
+
+                // 文本
+                .label {
+                    color: #99d2f9;
+                }
+
+                // 滑块
+                .slider-demo-block {
+
+                    // 滑块上方文本
+                    .value-box {
+                        color: #99d2f9;
+                    }
+                }
+
+                // tab选择
+                .item-tab {
+
+                    .tab {
+                        background-color: #02385c;
+                        color: #99d2f9;
+
+                        &.active-tab {
+                            color: #52f9ff;
+                            box-shadow: inset 0px 0px 5px 0px rgba(22, 121, 204, 0.55);
+                            border: 1px solid #1787b0;
+                            background-image: linear-gradient(0deg,
+                                    rgba(25, 119, 179, 0.74) 0%,
+                                    rgba(26, 101, 148, 0.74) 23%,
+                                    rgba(27, 82, 117, 0.74) 50%,
+                                    rgba(26, 101, 148, 0.74) 53%,
+                                    rgba(25, 119, 179, 0.74) 100%);
+                        }
+                    }
+                }
+
+                // 末尾单位
+                .unit {
+                    color: #99d2f9;
+                }
+
+                // tabs切换按钮
+                .item-tab {
+
+                    .tab {
+                        background-color: #02385c;
+                        color: #99d2f9;
+
+                        &.active-tab {
+                            color: #52f9ff;
+                            box-shadow: inset 0px 0px 5px 0px rgba(22, 121, 204, 0.55);
+                            border: 1px solid #1787b0;
+                            background-image: linear-gradient(0deg,
+                                    rgba(25, 119, 179, 0.74) 0%,
+                                    rgba(26, 101, 148, 0.74) 23%,
+                                    rgba(27, 82, 117, 0.74) 50%,
+                                    rgba(26, 101, 148, 0.74) 53%,
+                                    rgba(25, 119, 179, 0.74) 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // 弹窗取消和确认按钮
+    .form-button-box {
+
+        .cancel-button {
+            border: 1px solid #0acff9;
+            color: #0acff9;
+        }
+
+        .confirm-button {
+            background-color: #0b9baa;
+            color: #ffffff;
+        }
+    }
+}
+
+
+
+body[themeType="green"] {
+
+    // ElDialog弹窗样式
+    .el-dialog {
+        background: #042a30 !important;
+        border: 1px solid #026054;
+
+        .el-dialog__header {
+            background: linear-gradient(to right, #1b5b55, #1b5b55, #0c3b3d);
+
+            .el-dialog__title {
+                color: #c6f9ff;
+
+                &:before {
+                    background-image: url("@/assets/images/themeGeneral/dialog-title-icon.png");
+                }
+            }
+
+            .button {
+                background-image: url("@/assets/images/themeGreen/public/close-button.png");
+            }
+        }
+
+        // 设备控制表单
+        .control-form-box {
+            background-image: linear-gradient(#042239, #042239), linear-gradient(#0c6e9b, #0c6e9b);
+            box-shadow: inset 0px 4px 10px 0px #01101d;
+            border: 1px solid #0a3352;
+
+            // 每一项
+            .item {
+
+                // 文本
+                .label {
+                    color: #99d2f9;
+                }
+
+                // 滑块
+                .slider-demo-block {
+
+                    // 滑块上方文本
+                    .value-box {
+                        color: #99d2f9;
+                    }
+                }
+
+                // tab选择
+                .item-tab {
+
+                    .tab {
+                        background-color: #02385c;
+                        color: #99d2f9;
+
+                        &.active-tab {
+                            color: #52f9ff;
+                            box-shadow: inset 0px 0px 5px 0px rgba(22, 121, 204, 0.55);
+                            border: 1px solid #1787b0;
+                            background-image: linear-gradient(0deg,
+                                    rgba(25, 119, 179, 0.74) 0%,
+                                    rgba(26, 101, 148, 0.74) 23%,
+                                    rgba(27, 82, 117, 0.74) 50%,
+                                    rgba(26, 101, 148, 0.74) 53%,
+                                    rgba(25, 119, 179, 0.74) 100%);
+                        }
+                    }
+                }
+
+                // 末尾单位
+                .unit {
+                    color: #99d2f9;
+                }
+
+                // tabs切换按钮
+                .item-tab {
+
+                    .tab {
+                        background-color: #02385c;
+                        color: #99d2f9;
+
+                        &.active-tab {
+                            color: #52f9ff;
+                            box-shadow: inset 0px 0px 5px 0px rgba(22, 121, 204, 0.55);
+                            border: 1px solid #1787b0;
+                            background-image: linear-gradient(0deg,
+                                    rgba(25, 119, 179, 0.74) 0%,
+                                    rgba(26, 101, 148, 0.74) 23%,
+                                    rgba(27, 82, 117, 0.74) 50%,
+                                    rgba(26, 101, 148, 0.74) 53%,
+                                    rgba(25, 119, 179, 0.74) 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // 弹窗取消和确认按钮
+    .form-button-box {
+
+        .cancel-button {
+            border: 1px solid #17a3b0;
+            color: #52f9ff;
+            background-color: #044347;
+        }
+
+        .confirm-button {
+            background-color: #02a194;
+            color: #ffffff;
+        }
+    }
+}

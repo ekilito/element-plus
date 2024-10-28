@@ -1,0 +1,13 @@
+.cesium-viewer-toolbar {
+  display: flex !important;
+  z-index: 1;
+}
+
+// 去除三维菜单图标
+.mars3d-contextmenu-ul li+li:before {
+  content: none !important;
+}
+
+.mars3d-contextmenu-ul>li>a {
+  padding-left: 10px !important;
+}

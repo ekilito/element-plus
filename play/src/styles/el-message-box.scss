@@ -1,0 +1,106 @@
+// ElMessageBox弹窗样式
+.el-message-box {
+    background-color: #032743 !important;
+    border: 1px solid #0c6e9b;
+
+    .el-message-box__header {
+        // border: 1px solid #ff0000;
+
+        .el-message-box__title {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        // 顶部关闭按钮样式
+        .el-message-box__headerbtn {
+            // border: 1px solid #ff0000;
+            width: 30px;
+            height: 30px;
+            background-image: url('@/assets/images/themeBlue/public/close-button.png');
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: -1px;
+            top: -1px;
+
+            // 默认关闭按钮
+            .el-message-box__close {
+                display: none;
+            }
+        }
+
+    }
+
+
+    // 弹窗内容
+    .el-message-box__content {
+
+        .el-message-box__message {
+            color: #61c6fb;
+            font-size: 16px;
+        }
+    }
+
+    // 弹窗底部按钮
+    .el-message-box__btns {
+        // border: 1px solid #ff0000;
+        outline: none;
+
+        // 按钮
+        .el-button {
+            border: 1px solid #0acff9;
+            color: #0acff9;
+            background-color: #092a42;
+            outline: none;
+            border-radius: 2px;
+
+            &:hover,
+            &:active {
+                border: 1px solid #0acff9;
+                color: #0acff9;
+                background-color: #092a42;
+                outline: none;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+
+            // 隐藏默认文本
+            span {
+                display: none;
+            }
+
+            // 创建伪元素
+            &::after {
+                content: '取消';
+            }
+        }
+
+        // 确认按钮样式
+        .el-button--primary {
+            background-color: #0b9baa;
+            color: #fff;
+            border: none;
+            outline: none;
+
+            &:hover,
+            &:active {
+                background-color: #0b9baa;
+                color: #fff;
+                border: none;
+                outline: none;
+            }
+
+            // 隐藏默认文本
+            span {
+                display: none;
+            }
+
+            // 创建伪元素
+            &::after {
+                content: '确认';
+            }
+        }
+    }
+}

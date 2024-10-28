@@ -1,0 +1,210 @@
+body[themeType="blue"] {
+    .page-search-add-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 20px 0;
+
+        // 左侧
+        .left {
+            display: flex;
+            align-items: center;
+            height: 36px;
+
+            .input-box {
+                display: flex;
+                align-items: center;
+                height: 36px;
+
+                .label {
+                    font-family: MicrosoftYaHei;
+                    font-size: 16px;
+                    color: #b3f0f4;
+                }
+
+                .input {
+                    min-width: 200px;
+                    height: 36px;
+
+                    .el-input {
+                        width: 200px;
+                        height: 36px;
+                    }
+                }
+            }
+
+            // 搜索按钮
+            .search-button {
+                height: 36px;
+                background-color: #0a253d;
+                border-radius: 2px;
+                border: 1px solid #1787b0;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #61c6fb;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+
+            // 重置按钮
+            .resetting-button {
+                background-color: #1d0104;
+                border-radius: 2px;
+                border: 1px solid #d53c4e;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #fdd7dc;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+
+        // 右侧
+        .right {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .add-button {
+                background-color: #0a253d;
+                border-radius: 2px;
+                border: 1px solid #1787b0;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #61c6fb;
+                cursor: pointer;
+            }
+
+            // 重置按钮
+            .resetting-button {
+                background-color: #1d0104;
+                border-radius: 2px;
+                border: 1px solid #d53c4e;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #fdd7dc;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+
+        // 禁用按钮
+        .forbidden-button {
+            opacity: 0.8 !important;
+            cursor: not-allowed !important;
+        }
+    }
+}
+
+
+body[themeType="green"] {
+    .page-search-add-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 20px 0;
+
+        // 左侧
+        .left {
+            display: flex;
+            align-items: center;
+            height: 36px;
+
+            .input-box {
+                display: flex;
+                align-items: center;
+                height: 36px;
+
+                .label {
+                    font-family: MicrosoftYaHei;
+                    font-size: 16px;
+                    color: #b3f0f4;
+                }
+
+                .input {
+                    min-width: 200px;
+                    height: 36px;
+
+                    .el-input {
+                        width: 200px;
+                        height: 36px;
+                    }
+                }
+            }
+
+            // 搜索按钮
+            .search-button {
+                height: 36px;
+                background-color: #053c3f;
+                border-radius: 2px;
+                border: 1px solid #17a3b0;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #52f9ff;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+
+            // 重置按钮
+            .resetting-button {
+                background-color: #350305;
+                border-radius: 2px;
+                border: 1px solid #952e32;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #f4acaf;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+
+        // 右侧
+        .right {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .add-button {
+                height: 36px;
+                background-color: #053c3f;
+                border-radius: 2px;
+                border: 1px solid #17a3b0;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #52f9ff;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+
+            // 重置按钮
+            .resetting-button {
+                background-color: #350305;
+                border-radius: 2px;
+                border: 1px solid #952e32;
+                padding: 5px 20px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #f4acaf;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+
+        // 禁用按钮
+        .forbidden-button {
+            opacity: 0.8 !important;
+            cursor: not-allowed !important;
+        }
+    }
+}

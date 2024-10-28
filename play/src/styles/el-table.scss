@@ -1,0 +1,362 @@
+// element-table
+.el-table {
+  background: none !important;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-left: none !important;
+
+  // 表格容器
+  .el-table__inner-wrapper {
+
+    // 表头
+    .el-table__header-wrapper {
+      .el-table__header {
+        tr {
+          background: none;
+        }
+
+        // 单元格
+        .el-table__cell {
+          height: 50px;
+          font-size: 16px;
+          border-top: none !important;
+          border-bottom: none !important;
+          border-right: none !important;
+        }
+      }
+    }
+
+    // 表体
+    .el-table__body-wrapper {
+      .el-table__body {
+
+        // 行
+        .el-table__row {
+          background: none !important;
+          min-height: 45px;
+
+          // 单元格
+          .el-table__cell {
+            border: none !important;
+            padding: 0 !important;
+            height: 45px;
+            font-size: 16px;
+            border-bottom: none;
+            z-index: auto;
+
+            .cell {
+              height: 45px;
+              box-sizing: border-box;
+              line-height: 45px;
+              text-align: center;
+            }
+
+          }
+
+          // // 表格第一列
+          // .el-table__cell:nth-child(1) {
+          //   border-left: none !important;
+          // }
+
+          // 鼠标移入奇数行（清除默认白色背景）
+          &:nth-child(odd) .hover-row {
+            .el-table__cell {
+              background: none !important;
+            }
+          }
+
+          // 鼠标移入偶数行（清除默认白色背景）
+          &:nth-child(even) .hover-row {
+
+            .el-table__cell {
+              background: none !important;
+            }
+          }
+        }
+      }
+    }
+
+    // 表格底部白色边框
+    &::before {
+      background: none;
+    }
+
+    // 操作列表按钮样式
+    .table-button-box {
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      // 详情按钮
+      .details-btn {
+        border: 1px solid #d7b038;
+        color: #d7b038;
+      }
+
+      // 保存按钮
+      .save-btn {
+        border: 1px solid #00f0ff;
+        color: #00f0ff;
+      }
+
+      // 删除按钮
+      .delete-btn {
+        border: 1px solid #ee5c66;
+        color: #e55950;
+      }
+
+
+      // 所有按钮默认样式
+      .btn {
+        font-size: 15px;
+        border-radius: 2px;
+        padding: 0px 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        line-height: 26px;
+      }
+
+      // 除了第一个按钮，其他的按钮
+      & :nth-child(n+2) {
+        margin: 0 0 0 15px !important;
+      }
+    }
+  }
+}
+
+.el-table--border .el-table__inner-wrapper::after {
+  display: none !important;
+}
+
+// 表格右侧边框
+.el-table--border::after {
+  display: none !important;
+}
+
+// 表格左侧边框
+.el-table--border::before,
+.el-table__border-left-patch {
+  display: none !important;
+}
+
+body[themeType="blue"] {
+  .el-table {
+    // border: 1px solid #053b64 !important;
+    // border-left: none !important;
+
+    // 表格容器
+    .el-table__inner-wrapper {
+
+      // 表头
+      .el-table__header-wrapper {
+        .el-table__header {
+
+          // 单元格
+          .el-table__cell {
+            border: 1px solid #053b64;
+            background-color: #023759;
+            color: #61dcfb;
+
+            // 表格第一列
+            &:nth-child(1) {
+              // border-left: none !important;
+            }
+          }
+        }
+      }
+
+      // 表体
+      .el-table__body-wrapper {
+        // border-left: none !important;
+
+        .el-table__body {
+
+          // 行
+          .el-table__row {
+
+            /* 奇数行的颜色 */
+            &:nth-child(odd) {
+              background-color: #01142a;
+
+              .el-table__cell {
+                background-color: #01142a;
+
+                .cell {
+                  background-color: #01142a;
+                }
+              }
+            }
+
+            /* 偶数行的颜色 */
+            &:nth-child(even) {
+              background-color: #022038;
+
+              .el-table__cell {
+                background-color: #022038;
+
+                .cell {
+                  background-color: #022038;
+                }
+              }
+            }
+
+            // 单元格
+            .el-table__cell {
+              border-left: 1px solid #053b64 !important;
+              // border-top: 1px solid #053b64 !important;
+              border-bottom: 1px solid #053b64 !important;
+              color: #99d2f9;
+              border-color: #053b64 !important;
+
+              // 表格第一列
+              &:nth-child(1) {
+                // border-left: none !important;
+              }
+
+              // 表格最后一列
+              &:nth-last-child(1) {
+                border-right: 1px solid #053b64 !important;
+              }
+            }
+
+            // 鼠标移入行样式
+            &:hover {
+              background-color: #032c4f;
+
+              .el-table__cell {
+                background-color: #032c4f;
+
+                .cell {
+                  background-color: #032c4f;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // 操作列表按钮样式
+      .table-button-box {
+
+        // 编辑按钮
+        .edit-btn {
+          border: 1px solid #4daef8;
+          color: #4daef8;
+        }
+
+        // 打开按钮
+        .open-btn {
+          border: 1px solid #4df8b6;
+          color: #4df8b6;
+        }
+      }
+    }
+  }
+}
+
+body[themeType="green"] {
+  .el-table {
+    outline: 1px solid #034a4a !important;
+
+    // 表格容器
+    .el-table__inner-wrapper {
+
+      // 表头
+      .el-table__header-wrapper {
+        .el-table__header {
+
+          // 单元格
+          .el-table__cell {
+            border: 1px solid #034a4a;
+            background-color: #083936;
+            color: #65efdd;
+
+            // 表格第一列
+            &:nth-child(1) {
+              border-left: none !important;
+            }
+          }
+        }
+      }
+
+      // 表体
+      .el-table__body-wrapper {
+        .el-table__body {
+
+          // 行
+          .el-table__row {
+
+            /* 奇数行的颜色 */
+            &:nth-child(odd) {
+              background-color: #061c1d;
+
+              .el-table__cell {
+                background-color: #061c1d;
+
+                .cell {
+                  background-color: #061c1d;
+                }
+              }
+            }
+
+            /* 偶数行的颜色 */
+            &:nth-child(even) {
+              background-color: #062325;
+
+              .el-table__cell {
+                background-color: #062325;
+
+                .cell {
+                  background-color: #062325;
+                }
+              }
+            }
+
+            // 单元格
+            .el-table__cell {
+              border-left: 1px solid #034a4a !important;
+              border-top: 1px solid #034a4a !important;
+              color: #b3f0f4;
+
+              // 表格第一列
+              &:nth-child(1) {
+                border-left: none !important;
+              }
+            }
+
+            // 鼠标移入行样式
+            &:hover {
+              background-color: #063b3b;
+
+              .el-table__cell {
+                background-color: #063b3b;
+
+                .cell {
+                  background-color: #063b3b;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // 操作列表按钮样式
+      .table-button-box {
+
+        // 编辑按钮
+        .open-btn {
+          border: 1px solid #4daef8;
+          color: #4daef8;
+        }
+
+        // 打开按钮
+        .edit-btn {
+          border: 1px solid #4df8b6;
+          color: #4df8b6;
+        }
+      }
+    }
+  }
+}

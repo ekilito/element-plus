@@ -1,0 +1,6 @@
+// ElButton样式
+.el-button {
+    &:focus-visible {
+        outline: none;
+    }
+}

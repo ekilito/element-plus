@@ -1,0 +1,62 @@
+// 阈值当前数量
+.el-popper {
+    box-shadow: inset -1px 0px 5px 0px #09637d !important;
+    background-color: #044061 !important;
+    border-radius: 4px !important;
+    // border: 1px solid #1ae0f7 !important;
+    color: #00f0ff !important;
+
+    .el-popper__arrow {
+        &::before {
+            background-color: #044061 !important;
+            // border: 1px solid #1ae0f7 !important;
+        }
+    }
+}
+
+// 滑块
+.el-slider {
+    // border: 1px solid #ff0000;
+
+    // 滑道
+    .el-slider__runway {
+        height: 14px;
+        background-color: #021728;
+        box-shadow: 0px 0px 7px 0px rgba(4, 129, 250, 0.71),
+            inset 0px 3px 5px 0px #011324;
+        border-radius: 10px !important;
+
+        // 左侧滑道
+        .el-slider__bar {
+            height: 100%;
+            background-color: #06b8fa !important;
+            border-radius: 10px !important;
+        }
+
+        // 滑块容器
+        .el-slider__button-wrapper {
+            // border: 1px solid #fff;
+            top: -12px;
+            height: 40px;
+
+            // 滑块
+            .el-slider__button {
+                height: 26px;
+                width: 26px;
+                outline: none !important;
+                border: none !important;
+                background-image: url('@/assets/icons/slider-button.png');
+                border-radius: 0px;
+                background-size: 100% 100%;
+                background-color: transparent !important;
+            }
+        }
+
+        // 间断点
+        .el-slider__stop {
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #0ba0d7 !important;
+        }
+    }
+}

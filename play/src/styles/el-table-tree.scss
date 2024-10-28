@@ -1,0 +1,327 @@
+// 树形表格
+.el-table[el-table-style="tree"] {
+    /* border: 1px solid #ff0000 !important; */
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+
+    // 表格容器
+    .el-table__inner-wrapper {
+        // border: 1px solid #ff0000 !important;
+        width: 100%;
+        border: none !important;
+        outline: none !important;
+
+        // 表格头部容器
+        .el-table__header-wrapper {
+
+            // 默认样式
+            tr {
+                background-color: #073f68 !important;
+            }
+
+            // 头部
+            .el-table__header {
+                width: 100% !important;
+                background-color: #073f68 !important;
+
+                .el-table__cell {
+                    border: 1px solid #053B64 !important;
+                    padding: 0px !important;
+                    background-color: #073f68 !important;
+                    height: 50px !important;
+
+                    // 去除偶数列左边框
+                    &:nth-child(even) {
+                        border-left: none !important;
+                    }
+
+                    // 单元格
+                    .cell {
+                        height: 50px !important;
+                        padding: 0 20px !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        border: none !important;
+                        outline: none !important;
+                    }
+                }
+            }
+        }
+
+        // 表格体部容器
+        .el-table__body-wrapper {
+            // border: 1px solid #ff0000;
+            width: 100%;
+            // width: calc(100% - 10px) !important;
+            border: none !important;
+            outline: none !important;
+            overflow: hidden !important;
+
+            .el-table__body {
+                // border: 1px solid #ff0000 !important;
+                box-sizing: border-box;
+                overflow: hidden;
+                border: none !important;
+                outline: none !important;
+
+                // 每一行
+                .el-table__row {
+                    height: 45px !important;
+                    background-color: #02253f !important;
+
+                    // 单元格
+                    .el-table__cell {
+                        background-color: #02253f !important;
+
+                        .cell {
+                            background-color: #02253f !important;
+                            height: 100%;
+                            box-sizing: border-box;
+                            height: 50px !important;
+                            padding: 0 20px !important;
+                            display: flex !important;
+                            align-items: center !important;
+                            border: none !important;
+                            outline: none !important;
+
+                            // 左侧图标
+                            .el-table__expand-icon {
+                                // border: 1px solid #ff0000 !important;
+                                width: 14px !important;
+                                height: 14px !important;
+                                background-image: url('@/assets/public/el-table-tree-icon.png');
+                                background-size: 100% 100%;
+                                background-repeat: no-repeat;
+                                // background-position: 0 0;
+
+                                .el-icon {
+                                    // display: none !important;
+                                    opacity: 0 !important;
+                                }
+                            }
+
+                            // 左侧列
+                            .name-box {
+                                // border: 1px solid #ff0000;
+                                height: 100%;
+                                box-sizing: border-box;
+                                display: flex;
+                                align-items: center;
+
+                                .name {
+                                    width: 200px;
+                                    height: 45px;
+                                    margin: auto 0;
+                                    padding: 0 !important;
+                                    text-align: left;
+                                    box-sizing: border-box;
+                                    color: #99d2f9;
+                                    font-size: 16px;
+                                    padding: 0 0 0 12px;
+                                    text-indent: 12px;
+                                }
+
+                                .input {
+                                    width: 200px;
+                                    height: 32px;
+                                    padding: 0 !important;
+                                    background-color: #0a253d !important;
+                                    outline: 1px solid #1787b0 !important;
+                                    color: #99d2f9;
+                                    font-size: 16px;
+                                    box-sizing: border-box;
+                                    text-indent: 12px;
+                                    border-radius: 2px;
+
+                                    &::placeholder {
+                                        color: #5287bd;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                            // 操作列按钮样式
+                            .table-button-box {
+                                // border: 1px solid #ff0000;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                justify-content: center;
+
+                                // 编辑按钮
+                                .edit-btn {
+                                    border: 1px solid #4daef8;
+                                    color: #4daef8;
+                                }
+
+                                // 详情按钮
+                                .details-btn {
+                                    border: 1px solid #d7b038;
+                                    color: #d7b038;
+                                }
+
+                                // 保存按钮
+                                .save-btn {
+                                    border: 1px solid #00f0ff;
+                                    color: #00f0ff;
+                                }
+
+                                // 打开按钮
+                                .open-btn {
+                                    border: 1px solid #4df8b6;
+                                    color: #4df8b6;
+                                }
+
+                                // 删除按钮
+                                .delete-btn {
+                                    border: 1px solid #ee5c66;
+                                    color: #e55950;
+                                }
+
+
+                                // 所有按钮默认样式
+                                .btn {
+                                    font-size: 16px;
+                                    border-radius: 2px;
+                                    padding: 1px 13px;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+                                    // height: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                // 除了第一个按钮，其他的按钮
+                                & :nth-child(n+2) {
+                                    margin: 0 0 0 15px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 根节点 
+                .el-table__row {
+
+                    // 一级节点 单数节点
+                    &.el-table__row--level-0:nth-child(odd) {
+                        // height: 80px !important;
+                        background-color: #02253f !important;
+
+                        .el-table__cell {
+                            background-color: #02253f !important;
+
+                            .cell {
+                                background-color: #02253f !important;
+                            }
+                        }
+                    }
+
+                    // 一级节点 偶数节点
+                    &.el-table__row--level-0:nth-child(even) {
+                        // height: 80px !important;
+                        background-color: #02253f !important; // 02253f
+
+                        .el-table__cell {
+                            background-color: #02253f !important; // 02253f
+
+                            .cell {
+                                background-color: #02253f !important; // 02253f
+                            }
+                        }
+                    }
+
+                    // 二级节点 单数节点
+                    &.el-table__row--level-1:nth-child(odd) {
+                        background-color: #02253f !important;
+
+                        .el-table__cell {
+                            background-color: #02253f !important;
+
+                            .cell {
+                                background-color: #02253f !important;
+                            }
+                        }
+                    }
+
+                    // 二级节点 偶数节点
+                    &.el-table__row--level-1:nth-child(even) {
+                        background-color: #02253f !important;
+
+                        .el-table__cell {
+                            background-color: #02253f !important;
+
+                            .cell {
+                                background-color: #02253f !important;
+                            }
+                        }
+                    }
+
+                    // 三级节点 单数节点
+                    &.el-table__row--level-2:nth-child(odd) {
+                        background-color: #02253f !important;
+
+                        .el-table__cell {
+                            background-color: #02253f !important;
+
+                            .cell {
+                                background-color: #02253f !important;
+                            }
+                        }
+                    }
+
+                    // 三级节点 偶数节点
+                    &.el-table__row--level-2:nth-child(even) {
+                        background-color: #02253f !important;
+
+                        .el-table__cell {
+                            background-color: #02253f !important;
+
+                            .cell {
+                                background-color: #02253f !important;
+                            }
+                        }
+                    }
+
+                    // 四级节点 单数节点
+                    &.el-table__row--level-3:nth-child(odd) {
+                        background-color: #02253f !important;
+
+                        .el-table__cell {
+                            background-color: #02253f !important;
+
+                            .cell {
+                                background-color: #02253f !important;
+                            }
+                        }
+                    }
+
+                    // 四级节点 偶数节点
+                    &.el-table__row--level-3:nth-child(even) {
+                        background-color: #02253f !important;
+
+                        .el-table__cell {
+                            background-color: #02253f !important;
+
+                            .cell {
+                                background-color: #02253f !important;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        // 表格下边框
+        &::before {
+            display: none !important;
+        }
+    }
+
+    .el-scrollbar__bar.is-horizontal {
+        display: none;
+    }
+}

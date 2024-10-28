@@ -1,0 +1,107 @@
+body[themeType="blue"] {
+
+    // 滚动条样式
+    .el-scrollbar {
+
+        // 垂直滚动条样式，水平滚动条样式
+        .el-scrollbar__bar.is-vertical,
+        .el-scrollbar__bar.is-horizontal {
+            .el-scrollbar__thumb {
+                background-color: #0c6e9b;
+
+                &:hover {
+                    background-color: #0995d0;
+                }
+            }
+        }
+
+        // 下拉列表容器样式
+        .el-select-dropdown__wrap {
+            .el-scrollbar__view.el-select-dropdown__list {
+                padding: 0px;
+            }
+
+            // item样式
+            .el-select-dropdown__item {
+                color: #99d2f9;
+                background-color: #092f4e !important;
+
+                &:hover {
+                    color: #00f0ff;
+                    background-color: #083e6c !important;
+                }
+            }
+
+        }
+    }
+
+
+    // 滚动条容器
+    ::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    // 滚动条内的滑块
+    ::-webkit-scrollbar-thumb {
+        background: #0c6e9b;
+    }
+
+    // 滚动条内的滑块鼠标移入
+    ::-webkit-scrollbar-thumb:hover {
+        background: #0995d0;
+    }
+}
+
+body[themeType="green"] {
+
+    // 滚动条样式
+    .el-scrollbar {
+
+        // 垂直滚动条样式，水平滚动条样式
+        .el-scrollbar__bar.is-vertical,
+        .el-scrollbar__bar.is-horizontal {
+            .el-scrollbar__thumb {
+                background-color: #075152;
+
+                &:hover {
+                    background-color: #02998b;
+                }
+            }
+        }
+
+        // 下拉列表容器样式
+        .el-select-dropdown__wrap {
+            .el-scrollbar__view.el-select-dropdown__list {
+                padding: 0px;
+            }
+
+            // item样式
+            .el-select-dropdown__item {
+                color: #99d2f9;
+                background-color: #092f4e !important;
+
+                &:hover {
+                    color: #00f0ff;
+                    background-color: #083e6c !important;
+                }
+            }
+
+        }
+    }
+
+
+    // 滚动条容器
+    ::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    // 滚动条内的滑块
+    ::-webkit-scrollbar-thumb {
+        background: #075152;
+    }
+
+    // 滚动条内的滑块鼠标移入
+    ::-webkit-scrollbar-thumb:hover {
+        background: #02998b;
+    }
+}

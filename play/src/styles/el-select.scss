@@ -1,0 +1,228 @@
+// el-select下拉框选择器样式
+.el-select {
+
+    // 输入框容器
+    .el-select__wrapper {
+        // height: 42px;
+        height: 36px !important;
+        min-height: 36px !important;
+        background-color: #01203a;
+        border: 1px solid #094573;
+        outline: none !important;
+        box-shadow: none !important;
+        color: #61c6fb;
+        border-radius: 2px;
+
+        &:hover {
+            box-shadow: none !important;
+        }
+
+        // 输入框
+        .el-select__selection {
+            height: 100%;
+
+            // 选择了之后再点开下拉框，文字会变成没有选择的样式
+            // 未选择时占位符的颜色
+            .el-select__selected-item.el-select__placeholder.is-transparent {
+                color: #5287bd;
+                font-size: 14px;
+            }
+
+            // 选择后占位符的颜色
+            .el-select__selected-item.el-select__placeholder {
+                color: #61c6fb;
+                font-size: 14px;
+            }
+
+            // 多选的tag
+            .el-tag {
+                border: 1px solid #125589;
+                background-color: #092f4e;
+                color: #99d2f9;
+
+                // 关闭tag按钮
+                .el-tag__close {
+                    color: #ffffff;
+                    background-color: #092f4e;
+                }
+            }
+        }
+
+        // 右侧图标
+        .el-select__suffix {
+            width: 14px;
+            height: 14px;
+
+            .el-icon {
+                svg {
+                    color: #27d5f4;
+                }
+            }
+        }
+
+
+    }
+
+    .el-select__wrapper.is-disabled {
+        background-color: #01203a;
+    }
+}
+
+// 级联下拉选择器
+.el-cascader {
+    .el-input {
+        .el-input__wrapper {
+            // height: 42px;
+            height: 36px !important;
+            background-color: #01203a;
+            border: 1px solid #094573;
+            outline: none !important;
+            box-shadow: none !important;
+            color: #61c6fb;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+
+            // 输入框
+            .el-input__inner {
+                height: 100%;
+                color: #61c6fb !important;
+                font-size: 14px;
+
+                &::placeholder {
+                    color: #5287bd !important;
+                    font-size: 14px;
+                }
+            }
+
+            // 右侧图标
+            .el-input__suffix {
+                width: 14px;
+                height: 14px;
+
+                .el-input__suffix-inner {
+                    width: 100%;
+                    height: 100%;
+
+                    .el-icon {
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('@/assets/public/select-icon.png');
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+
+                        svg {
+                            display: none !important;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        & .el-input__icon {
+            margin: 0px;
+        }
+    }
+}
+
+// 下拉列表选项分组
+.el-select-group__wrap {
+
+    // 分组标题（分组名）
+    .el-select-group__title {
+        color: rgba(153, 210, 249,0.5);
+    }
+}
+
+// 下拉列表框最外层容器
+.el-popper {
+    border-radius: 4px;
+    position: relative;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+
+    // 下拉列表选择器
+    // 下拉列表框容器
+    &.el-select__popper {
+        border: none !important;
+        outline: none !important;
+    }
+
+    // 下拉列表上面的小箭头 下拉列表，级联下拉列表通用
+    &.is-light .el-popper__arrow {
+        z-index: 20001;
+
+        &::before {
+            // border: 1px solid #125689 !important;
+            border: 1px solid #094573 !important;
+            background: #092f4e !important;
+            z-index: 2000;
+            overflow: hidden;
+            outline: none !important;
+        }
+    }
+
+    // 下拉列表容器盒子
+    .el-select-dropdown {
+        outline: 1px solid #125689;
+        border: none !important;
+        background-color: #092f4e;
+        color: #99d2f9;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+
+    // 级联下拉列表选择器
+    // 下拉列表框容器
+    .el-cascader-panel {
+        border: none !important;
+        outline: 1px solid #125689;
+        background-color: #092f4e;
+        box-shadow: none !important;
+
+        // 容器
+        .el-scrollbar.el-cascader-menu {
+            border: none !important;
+            outline: none !important;
+
+            // 垂直滚动条样式 水平滚动条样式
+            .el-scrollbar__bar.is-vertical,
+            .el-scrollbar__bar.is-horizontal {
+                .el-scrollbar__thumb {
+                    background-color: #0c6e9b;
+
+                    &:hover {
+                        background-color: #0995d0;
+                    }
+                }
+            }
+
+            // item容器
+            .el-cascader-menu__wrap.el-scrollbar__wrap {
+
+                // 列表
+                .el-scrollbar__view.el-cascader-menu__list {
+
+                    // item
+                    .el-cascader-node {
+                        color: #99d2f9;
+                        background-color: #092f4e;
+
+                        &:hover {
+                            color: #00f0ff;
+                            background-color: #083e6c;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}

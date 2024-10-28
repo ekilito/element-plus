@@ -1,0 +1,107 @@
+body[themeType="blue"] {
+    .el-radio-group {
+
+        // 未选中的样式
+        .el-radio {
+
+            // 选择器
+            .el-radio__input {
+                .el-radio__inner {
+                    border: 1px solid #5287bd !important;
+                    background: transparent !important;
+                    outline: none !important;
+
+                    &::after {
+                        width: 6px;
+                        height: 6px;
+                        background: transparent !important;
+                    }
+                }
+            }
+
+            // 选择器文本
+            .el-radio__label {
+                color: #5287bd !important;
+            }
+        }
+
+        // 选中的样式
+        .is-checked.el-radio {
+
+            // 选择器
+            .el-radio__input {
+                .el-radio__inner {
+                    border: 1px solid #00f0ff !important;
+                    background: transparent !important;
+                    outline: none !important;
+
+                    &::after {
+                        width: 6px;
+                        height: 6px;
+                        background: #00f0ff !important;
+                    }
+                }
+            }
+
+            // 选择器文本
+            .el-radio__label {
+                color: #00f0ff !important;
+            }
+        }
+    }
+}
+
+
+
+body[themeType="green"] {
+    .el-radio-group {
+
+        // 未选中的样式
+        .el-radio {
+
+            // 选择器
+            .el-radio__input {
+                .el-radio__inner {
+                    border: 1px solid #66afb4 !important;
+                    background: transparent !important;
+                    outline: none !important;
+
+                    &::after {
+                        width: 6px;
+                        height: 6px;
+                        background: transparent !important;
+                    }
+                }
+            }
+
+            // 选择器文本
+            .el-radio__label {
+                color: #66afb4 !important;
+            }
+        }
+
+        // 选中的样式
+        .is-checked.el-radio {
+
+            // 选择器
+            .el-radio__input {
+                .el-radio__inner {
+                    border: 1px solid #0dfddd !important;
+                    background: transparent !important;
+                    outline: none !important;
+
+                    &::after {
+                        width: 6px;
+                        height: 6px;
+                        background: #0dfddd !important;
+                    }
+                }
+            }
+
+            // 选择器文本
+            .el-radio__label {
+                color: #0dfddd !important;
+            }
+        }
+    }
+}

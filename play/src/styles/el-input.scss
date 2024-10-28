@@ -1,0 +1,177 @@
+body[themeType="blue"] {
+    .el-input {
+
+        .el-input__wrapper {
+            border: 1px solid #094573;
+            background-color: #01203a;
+            border-radius: 2px;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+
+            .el-input__inner {
+                border: none !important;
+                outline: none !important;
+                color: #61c6fb !important;
+
+                // 占位符
+                &::placeholder {
+                    color: #5287bd;
+                    padding: 0 0 0 3px;
+                }
+            }
+
+            // 输入框内前面图标
+            .el-input__prefix {
+                color: #61c6fb !important;
+            }
+
+            // 输入框内后面图标
+            .el-input__suffix {
+                color: #61c6fb !important;
+            }
+        }
+
+        // 只读输入框
+        &.is-disabled .el-input__inner {
+            color: #61c6fb !important;
+            -webkit-text-fill-color: rgba(97, 198, 251, 0.7) !important;
+        }
+    }
+
+    // 禁用状态的输入框
+    .el-input.is-disabled {
+
+        .el-input__wrapper {
+            border: 1px solid #094573;
+            background-color: #01203a;
+            border-radius: 2px;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    // 数字输入框的步进器按钮隐藏
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+    }
+
+    // 数字输入框的步进器按钮隐藏
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+    }
+
+
+    // 多行文本框样式
+    .el-textarea {
+        outline: none !important;
+
+        .el-textarea__inner {
+            outline: none !important;
+            color: #61c6fb !important;
+            border: 1px solid #094573 !important;
+            background-color: #01203a !important;
+            box-shadow: none !important;
+
+            // 占位符
+            &::placeholder {
+                color: #5287bd;
+                padding: 0 0 0 3px;
+            }
+        }
+    }
+}
+
+body[themeType="green"] {
+    .el-input {
+
+        .el-input__wrapper {
+            border: 1px solid #034a4a;
+            background-color: #063235;
+            border-radius: 2px;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+
+            .el-input__inner {
+                border: none !important;
+                outline: none !important;
+                color: #59d5dd !important;
+
+                // 占位符
+                &::placeholder {
+                    color: #66afb4;
+                    padding: 0 0 0 3px;
+                }
+            }
+
+            // 输入框内前面图标
+            .el-input__prefix {
+                color: #59d5dd !important;
+            }
+
+            // 输入框内后面图标
+            .el-input__suffix {
+                color: #59d5dd !important;
+            }
+        }
+
+        // 只读输入框
+        &.is-disabled .el-input__inner {
+            color: #59d5dd !important;
+            -webkit-text-fill-color: rgba(89, 213, 221, 0.7) !important;
+        }
+    }
+
+    // 禁用状态的输入框
+    .el-input.is-disabled {
+
+        .el-input__wrapper {
+            border: 1px solid #034a4a;
+            background-color: #063235;
+            border-radius: 2px;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    // 数字输入框的步进器按钮隐藏
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+    }
+
+    // 数字输入框的步进器按钮隐藏
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+    }
+
+
+    // 多行文本框样式
+    .el-textarea {
+        outline: none !important;
+
+        .el-textarea__inner {
+            outline: none !important;
+            color: #59d5dd !important;
+            border: 1px solid #034a4a !important;
+            background-color: #063235 !important;
+            box-shadow: none !important;
+
+            // 占位符
+            &::placeholder {
+                color: #66afb4;
+                padding: 0 0 0 3px;
+            }
+        }
+    }
+}

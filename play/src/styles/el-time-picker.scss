@@ -1,0 +1,179 @@
+// 普通的时间选择器
+.el-time-panel,
+  // 时间范围选择器
+.el-time-range-picker,
+{
+  border: 1px solid #1787b0 !important;
+  background-color: #092f4e !important;
+
+  // 弹窗体部
+  .el-time-panel__content,
+  .el-time-range-picker__content {
+
+    .el-time-spinner {
+      .el-time-spinner__wrapper {
+
+        // 单元格
+        .el-time-spinner__item {
+          color: #99d2f9;
+
+          // 鼠标移入
+          &:hover:not(.is-disabled):not(.is-active) {
+            color: #00f0ff;
+            background-color: #092f4e !important;
+            cursor: pointer;
+          }
+
+          // 当前选中的时间
+          &.is-active {
+            color: #00f0ff;
+          }
+        }
+      }
+    }
+
+    .el-time-range-picker__cell {
+      .el-time-range-picker__header {
+        color: #99d2f9;
+      }
+
+      .el-time-range-picker__body {
+        border: 1px solid #053b64 !important;
+      }
+    }
+
+    &::before {
+      border-bottom: 1px solid #053b64 !important;
+      border-top: 1px solid #053b64 !important;
+    }
+
+  }
+
+  // 弹窗底部
+  .el-time-panel__footer {
+    border-top: 1px solid #1787b0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    // 取消按钮
+    .el-time-panel__btn.cancel {
+      background-color: #092a42 !important;
+      border-radius: 2px;
+      border: 1px solid #0acff9 !important;
+      outline: none;
+      line-height: auto;
+      color: #0acff9 !important;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      font-weight: normal;
+    }
+
+    // 确定按钮
+    .el-time-panel__btn.confirm {
+      background-color: #0b9baa !important;
+      border-radius: 2px;
+      color: #ffffff !important;
+      outline: none;
+      border: none;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      font-weight: normal;
+      font-size: 12px;
+    }
+
+  }
+}
+
+
+// 时间范围选择器输入框
+.el-date-editor {
+  box-shadow: none !important;
+  height: 36px !important;
+  border: 1px solid #1787b0;
+  background-color: #0a253d;
+  border-radius: 2px;
+  // width: 280px !important;
+
+  // 图标
+  .el-icon {
+    color: #61c6fb !important;
+  }
+
+  // 分离文字
+  .el-range-separator {
+    color: #61c6fb !important;
+  }
+
+  // 文本框
+  .el-range-input {
+    color: #61c6fb !important;
+
+    // 占位符
+    &::placeholder {
+      color: #5287bd;
+      padding: 0 0 0 3px;
+    }
+  }
+
+
+}
+
+
+// 日期时间范围选择器
+.el-date-range-picker {
+
+
+  border: 1px solid #1787b0 !important;
+  background-color: #092f4e !important;
+
+  .el-date-range-picker__content.is-left {
+    border-right: 1px solid #1787b0;
+  }
+
+  .el-date-table th {
+    border-bottom: 1px solid #0acff9;
+  }
+
+  .el-date-range-picker__time-header {
+    border-bottom: 1px solid #0acff9;
+  }
+
+  .el-date-table td.in-range .el-date-table-cell {
+    background: rgba(2, 25, 55, 0.86);;
+  }
+
+  .el-date-table td.in-range .el-date-table-cell:hover {
+    background: rgba(2, 25, 55, 0.86);;
+  }
+
+  .el-picker-panel__footer {
+    border-top: 1px solid #0acff9;
+    background: none;
+
+    .is-plain {
+      border: 1px solid #0acff9;
+      color: #0acff9;
+      background: none;
+    }
+
+    .is-text {
+      color: #0acff9;
+    }
+
+    .el-button.is-text:not(.is-disabled):active {
+      background: none;
+
+    }
+  }
+
+}
+
+
+

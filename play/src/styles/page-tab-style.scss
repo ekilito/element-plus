@@ -1,0 +1,96 @@
+// 一级Tab
+.primary-tab-box {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    .tab {
+        font-size: 16px;
+        white-space: nowrap;
+        padding: 0 25px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:nth-child(2) {
+            border-left: none;
+        }
+    }
+
+    .active-tab {
+        white-space: nowrap;
+        font-size: 16px;
+        padding: 0 25px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+// 二级Tab
+.secondary-tab-box {}
+
+// 三级Tab
+.triple-tab-box {}
+
+body[themeType="blue"] {
+
+    // 一级Tab
+    .primary-tab-box {
+        .tab {
+            border: 1px solid #125689;
+            border-left: none;
+            color: #6bc2db;
+
+            &:nth-child(1) {
+                border-left: 1px solid #125689;
+            }
+        }
+
+        .active-tab {
+            background-color: #033755;
+            box-shadow: inset 0px 0px 5px 0px rgba(38, 213, 250, 0.72);
+            color: #17eef6;
+        }
+    }
+
+    // 二级Tab
+    .secondary-tab-box {}
+
+    // 三级Tab
+    .triple-tab-box {}
+}
+
+body[themeType="green"] {
+
+    // 一级Tab
+    .primary-tab-box {
+        .tab {
+            border: 1px solid #034a4a;
+            border-left: none;
+            color: #b3f0f4;
+
+            &:nth-child(1) {
+                border-left: 1px solid #034a4a;
+            }
+        }
+
+        .active-tab {
+            background-color: #062d30;
+            box-shadow: inset 0px 0px 5px 0px rgba(34, 196, 211, 0.72);
+            color: #0dfddd;
+        }
+    }
+
+    // 二级Tab
+    .secondary-tab-box {}
+
+    // 三级Tab
+    .triple-tab-box {}
+}

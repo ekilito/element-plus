@@ -1,0 +1,23 @@
+// el-dropdown下拉菜单样式
+.el-dropdown-menu {
+    background-color: #092f4e !important;
+    border: 1px solid #1787b0 !important;
+    padding: 7px 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    // 菜单项之间的分割线
+    .el-dropdown-menu__item--divided {
+        display: none;
+    }
+
+    // 菜单的每一项
+    .el-dropdown-menu__item {
+        color: #99d2f9 !important;
+
+        // 鼠标移入菜单
+        &:not(.is-disabled):focus {
+            background-color: #083e6c !important;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.el-input-number {
+  // border: 1px solid #ff0000;
+  outline: none !important;
+
+  // 减号按钮 加号按钮
+  .el-input-number__decrease,
+  .el-input-number__increase {
+    background-color: #072642;
+    border-radius: 2px 0px 0px 2px;
+    color: #63a1d9;
+
+    &:hover {
+      color: #00f0ff;
+    }
+
+    .el-icon {
+      font-size: 20px;
+    }
+  }
+
+  // 减号按钮
+  .el-input-number__decrease {
+    border-right: 1px solid #033869 !important;
+  }
+
+  // 加号按钮
+  .el-input-number__increase {
+    border-left: 1px solid #033869 !important;
+  }
+
+  // 清除鼠标移入样式
+  .el-input:not(.is-disabled) .el-input__wrapper {
+    box-shadow: none !important;
+  }
+
+  .el-input {
+    .el-input__wrapper {
+      border: 1px solid #033869 !important;
+    }
+  }
+
+  // input提示文本对齐方式
+  ::-webkit-input-placeholder {
+    text-align: left;
+  }
+}

@@ -1,0 +1,125 @@
+@import "./transition";
+@import "./sidebar";
+@import "./reset";
+@import "./dark";
+
+.app-container {
+  padding: 10px;
+}
+
+.search-container {
+  padding: 18px 0 0 10px;
+  margin-bottom: 10px;
+  background-color: var(--el-bg-color-overlay);
+  border: 1px solid var(--el-border-color-light);
+  border-radius: 4px;
+  box-shadow: var(--el-box-shadow-light);
+}
+
+.table-container>.el-card__header {
+  padding: calc(var(--el-card-padding) - 8px) var(--el-card-padding);
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32 160 255);
+  }
+}
+
+* {
+  -webkit-touch-callout: none;
+  /*系统默认菜单被禁用*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  -moz-user-select: none;
+  /*火狐*/
+  -ms-user-select: none;
+  /*IE10*/
+  user-select: none;
+}
+
+input {
+  -webkit-user-select: auto;
+  /*webkit浏览器*/
+}
+
+textarea {
+  -webkit-user-select: auto;
+  /*webkit浏览器*/
+}
+
+@font-face {
+  font-family: "BigruixianBlackGBV"; //自定义字体名称
+  src: url('./font/BigruixianBlackGBV1.0.TTF'); //引入字体路径
+  font-weight: normal; //字体粗细
+  font-style: normal; //字体风格
+}
+
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f8f800;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: #acadb2;
+  ;
+  transition: color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #acadb2;
+  ;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.el-loading-mask {
+  background: rgba(0, 0, 0, 0.8) !important;
+
+  .el-loading-text {
+    color: #00ffff !important;
+    font-size: 18px !important;
+  }
+
+  .el-loading-spinner .path {
+    stroke: #00ffff !important;
+  }
+
+  .circular {
+    color: #00ffff !important;
+  }
+
+  .el-loading-spinner .circular {
+    height: 60px;
+    width: 60px;
+
+  }
+}
+
+
+
+.select_popper {
+  z-index: 99999 !important;
+}
+
+
+

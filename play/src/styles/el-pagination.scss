@@ -1,0 +1,129 @@
+body[themeType="blue"] {
+
+    // 分页器样式
+    .pagination {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+
+        // 分页器容器
+        .el-pagination {
+
+            // 总条目数
+            .el-pagination__total {
+                color: #5287bd !important;
+            }
+
+            // 上一页按钮
+            .btn-prev {
+                border-radius: 2px;
+                border: 1px solid #033869;
+                color: #5287bd !important;
+            }
+
+            // 页码
+            .el-pager {
+
+                .more {
+                    border-radius: 2px;
+                    border: 1px solid #033869;
+                    color: #5287bd !important;
+                }
+
+                .number {
+                    border-radius: 2px;
+                    border: 1px solid #033869;
+                    color: #5287bd !important;
+                }
+
+                .is-active.number {
+                    background-color: #23bdf0;
+                    color: #ffffff !important;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            // 下一页按钮
+            .btn-next.is-last {
+                border-radius: 2px;
+                border: 1px solid #033869;
+                color: #5287bd !important;
+            }
+
+            // 上一页和下一页按钮
+            button {
+                .el-icon {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+body[themeType="green"] {
+
+    // 分页器样式
+    .pagination {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+
+        // 分页器容器
+        .el-pagination {
+
+            // 总条目数
+            .el-pagination__total {
+                color: #b3f0f4 !important;
+            }
+
+            // 上一页按钮
+            .btn-prev {
+                border-radius: 2px;
+                border: 1px solid #034a4a;
+                color: #b3f0f4 !important;
+            }
+
+            // 页码
+            .el-pager {
+
+                .more {
+                    border-radius: 2px;
+                    border: 1px solid #034a4a;
+                    color: #b3f0f4 !important;
+                }
+
+                .number {
+                    border-radius: 2px;
+                    border: 1px solid #034a4a;
+                    color: #b3f0f4 !important;
+                }
+
+                .is-active.number {
+                    background-color: #02998b;
+                    color: #ffffff !important;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            // 下一页按钮
+            .btn-next.is-last {
+                border-radius: 2px;
+                border: 1px solid #034a4a;
+                color: #b3f0f4 !important;
+            }
+
+            // 上一页和下一页按钮
+            button {
+                .el-icon {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}

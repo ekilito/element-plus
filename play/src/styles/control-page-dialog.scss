@@ -1,0 +1,207 @@
+.control-page-dialog {
+    border: 1px solid #022c47;
+    width: 560px;
+    background-image: linear-gradient(#022c47,
+            #022c47),
+        linear-gradient(#092f4e,
+            #092f4e);
+    box-shadow: inset 0px 0px 5px 0px rgba(22, 121, 204, 0.55);
+    border-radius: 4px 0px 4px 4px;
+    position: absolute;
+    top: 0px;
+    right: 105px;
+    padding: 10px 20px;
+    z-index: 99999;
+
+    // 弹窗标题
+    .dialog-title {
+        font-size: 18px;
+        color: #a0d7fe;
+        font-weight: bold;
+    }
+
+    // 弹窗关闭按钮
+    .close-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    // 设备控制表单
+    .control-form-box {
+        margin-top: 10px;
+        // height: 200px;
+        padding: 0 20px 20px 20px;
+        overflow: hidden;
+        background-image: linear-gradient(#042239, #042239), linear-gradient(#0c6e9b, #0c6e9b);
+        box-shadow: inset 0px 4px 10px 0px #01101d;
+        border: 1px solid #0a3352;
+        box-sizing: border-box;
+
+        // 每一项
+        .item {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            // 文本
+            .label {
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #99d2f9;
+                width: 90px;
+                text-align: end;
+            }
+
+            // 输入框
+            .el-input {
+                flex: 1;
+            }
+
+            // 滑块
+            .slider-demo-block {
+                flex: 1;
+                position: relative;
+                margin: 0 0 0 5px;
+
+                // 滑块上方文本
+                .value-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 16px;
+                    color: #99d2f9;
+                    position: absolute;
+                    top: -20px;
+                    width: 100%;
+                }
+            }
+
+            // 步进器
+            .el-input-number {
+                width: 110px;
+                margin-left: 15px;
+            }
+
+            // tab选择
+            .item-tab {
+                flex: 1;
+                display: flex;
+                align-items: center;
+
+                .tab {
+                    width: 84px;
+                    height: 32px;
+                    background-color: #02385c;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 16px;
+                    color: #99d2f9;
+                    cursor: pointer;
+
+                    &.active-tab {
+                        color: #52f9ff;
+                        border-radius: 2px;
+                        box-shadow: inset 0px 0px 5px 0px rgba(22, 121, 204, 0.55);
+                        border: 1px solid #1787b0;
+                        background-image: linear-gradient(0deg,
+                                rgba(25, 119, 179, 0.74) 0%,
+                                rgba(26, 101, 148, 0.74) 23%,
+                                rgba(27, 82, 117, 0.74) 50%,
+                                rgba(26, 101, 148, 0.74) 53%,
+                                rgba(25, 119, 179, 0.74) 100%);
+                    }
+                }
+            }
+
+            // 末尾单位
+            .unit {
+                width: 50px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #99d2f9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            // tabs切换按钮
+            .item-tab {
+                display: flex;
+                align-items: center;
+
+                .tab {
+                    width: 84px;
+                    height: 32px;
+                    background-color: #02385c;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 16px;
+                    color: #99d2f9;
+                    cursor: pointer;
+
+                    &.active-tab {
+                        color: #52f9ff;
+                        border-radius: 2px;
+                        box-shadow: inset 0px 0px 5px 0px rgba(22, 121, 204, 0.55);
+                        border: 1px solid #1787b0;
+                        background-image: linear-gradient(0deg,
+                                rgba(25, 119, 179, 0.74) 0%,
+                                rgba(26, 101, 148, 0.74) 23%,
+                                rgba(27, 82, 117, 0.74) 50%,
+                                rgba(26, 101, 148, 0.74) 53%,
+                                rgba(25, 119, 179, 0.74) 100%);
+                    }
+                }
+            }
+        }
+    }
+
+    // 底部按钮
+    .button-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+
+        // 取消/下发按钮
+        .cancel-button {
+            width: 100px;
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid #0acff9;
+            background: none;
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            color: #0acff9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        // 提交/按钮
+        .confirm-button {
+            border: none;
+            width: 100px;
+            height: 35px;
+            background-color: #0b9baa;
+            border-radius: 4px;
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+}

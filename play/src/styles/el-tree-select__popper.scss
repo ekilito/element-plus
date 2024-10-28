@@ -1,0 +1,50 @@
+// 树形选择器
+.el-tree-select__popper {
+
+    // 内容容器
+    .el-select-dropdown__wrap {
+
+        // 列表
+        .el-tree {
+            background: #092f4e !important;
+
+            // 每一项
+            .el-tree-node {
+                min-height: 35px;
+
+                &:hover {
+                    color: #00f0ff;
+                    background-color: #083e6c !important;
+                }
+
+                // 内容
+                .el-tree-node__content {
+                    background: #092f4e !important;
+                    min-height: 35px;
+                    border-bottom: 1px solid #053b64 !important;
+
+                    .el-select-dropdown__item {
+                        background: #092f4e !important;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        &:hover {
+                            color: #00f0ff;
+                            background-color: #092f4e !important;
+                        }
+                    }
+                }
+
+                // 子级容器
+                .el-tree-node__children {
+
+                    // 子级每一项
+                    .el-tree-node {
+                        min-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
